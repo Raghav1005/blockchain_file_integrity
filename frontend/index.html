@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blockchain File Integrity Dashboard</title>
+  <style>
+    :root{
+      --bg1:#060b10;
+      --bg2:#0c1622;
+      --accent:#00e0ff;
+      --accent2:#1e90ff;
+      --text:#eaf6ff;
+      --muted:#9fb3c8;
+      --card:#0d1a26cc; /* glass */
+      --ring: 0 0 0 2px rgba(0,224,255,.35), 0 0 24px rgba(0,224,255,.25);
+      --shadow: 0 10px 30px rgba(0,0,0,.45);
+      --radius: 18px;
+      --gap: 22px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--text); background:
+        radial-gradient(1200px 600px at 20% -10%, #04202b 0%, transparent 60%),
+        radial-gradient(1000px 700px at 120% 10%, #071a34 0%, transparent 65%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    .topbar{
+      max-width:1100px; margin:26px auto 20px; padding:14px 18px;
+      border-radius:999px; background:linear-gradient(90deg, #06d7f7, #1b73ff);
+      color:#06131b; font-weight:700; letter-spacing:.3px;
+      box-shadow: var(--shadow);
+      display:flex; align-items:center; justify-content:center;
+      position:relative;
+    }
+    .topbar .logout{
+      position:absolute; right:10px; top:50%; transform:translateY(-50%);
+      background:rgba(255,255,255,.15); color:#fff; border:0; padding:8px 14px;
+      border-radius:999px; cursor:pointer; backdrop-filter: blur(6px);
+    }
+
+    .title{
+      text-align:center; margin:10px 0 28px;
+      font-size:36px; font-weight:800;
+      text-shadow:0 0 12px rgba(0,224,255,.55), 0 0 2px #00e0ff;
+    }
+
+    .container{max-width:1100px; margin:0 auto; padding:0 16px 50px}
+    .grid{display:grid; gap:var(--gap); grid-template-columns: repeat(12, 1fr);}
+    .col-6{grid-column:span 6}
+    .col-12{grid-column:span 12}
+
+    .card{
+      background:var(--card); border:1px solid rgba(0,224,255,.12);
+      border-radius:var(--radius); box-shadow:var(--shadow);
+      backdrop-filter: blur(10px);
+      padding:22px; position:relative;
+    }
+    .card:before{
+      content:""; position:absolute; inset:-1px; border-radius:inherit;
+      pointer-events:none; box-shadow: var(--ring);
+      opacity:.35;
+    }
+    .card h3{
+      margin:0 0 14px; font-size:22px; font-weight:800;
+      display:flex; align-items:center; gap:10px;
+      text-shadow:0 0 8px rgba(0,224,255,.35);
+    }
+    .field{display:flex; gap:12px; align-items:center; margin-bottom:12px}
+    input[type="file"], input[type="text"]{
+      flex:1; padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,.12);
+      background:#0b1a26; color:var(--text);
+    }
+    .btn{
+      width:100%; padding:12px 14px; border:0; border-radius:12px;
+      font-weight:800; cursor:pointer; letter-spacing:.4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color:#011018; box-shadow:0 8px 25px rgba(0,224,255,.25);
+    }
+    .btn:hover{filter:brightness(1.06)}
+    .btn.secondary{
+      background:#102231; color:var(--text); border:1px solid rgba(255,255,255,.12);
+      box-shadow:none;
+    }
+
+    .log{height:220px; overflow:auto; padding:14px; border-radius:12px;
+      background:#08141e; border:1px dashed rgba(0,224,255,.25); color:var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      line-height:1.35;
+    }
+
+    @media (max-width:900px){
+      .col-6{grid-column:span 12}
+      .title{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    Blockchain File Integrity System
+    <button class="logout" onclick="location.href='/logout'">Logout</button>
+  </div>
+
+  <h1 class="title">🔒 Blockchain File Integrity Dashboard</h1>
+
+  <div class="container">
+    <div class="grid">
+      <!-- Register -->
+      <section class="card col-6" id="register-card">
+        <h3>🗂️ Register File</h3>
+          <div class="field file-input">
+            <input type="file" id="registerFile">
+            <label for="registerFile">Choose File</label>
+          </div>
+
+        <div class="field">
+          <input type="text" id="uploaderId" placeholder="Uploader ID (optional)"/>
+        </div>
+        <button class="btn" id="btnRegister">Register</button>
+      </section>
+
+      <!-- Verify -->
+      <section class="card col-6" id="verify-card">
+        <h3>🔎 Verify File</h3>
+        <div class="field file-input">
+          <input type="file" id="verifyFile">
+          <label for="verifyFile">Choose File</label>
+        </div>
+
+        <button class="btn" id="btnVerify">Verify</button>
+      </section>
+
+      <!-- Actions -->
+      <section class="card col-12" id="actions-card">
+        <h3>🧩 Blockchain Actions</h3>
+        <div class="grid" style="gap:14px">
+          <div class="col-4"><button class="btn secondary" id="btnHistory">View File History</button></div>
+          <div class="col-4"><button class="btn secondary" id="btnMyHistory">My Upload History</button></div>
+          <div class="col-4"><button class="btn secondary" id="btnValidate">Validate Blockchain</button></div>
+        </div>
+      </section>
+
+      <!-- System Log -->
+      <section class="card col-12" id="log-card">
+        <h3>🧾 System Log</h3>
+        <pre id="systemLog">ready...</pre>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // log helper -> uses #systemLog  ✅
+    const log = (msg) => {
+      const el = document.getElementById('systemLog');
+      el.textContent += `\n${new Date().toLocaleTimeString()} › ${msg}`;
+      el.scrollTop = el.scrollHeight;
+    };
+
+    // Fill uploader from logged-in user (if set)
+    document.addEventListener("DOMContentLoaded", () => {
+      const u = localStorage.getItem("username");
+      if (u) document.getElementById("uploaderId").value = u;
+    });
+
+    // Register  ✅ sends uploader_id
+    document.getElementById('btnRegister').onclick = async () => {
+      const f = document.getElementById('registerFile').files[0];
+      const uploader = document.getElementById('uploaderId').value || localStorage.getItem("username") || 'anonymous';
+      if (!f) { log('choose a file to register'); return; }
+      const fd = new FormData(); fd.append('file', f); fd.append('uploader_id', uploader);
+      log(`registering ${f.name}...`);
+      try{
+        const r = await fetch('/register', { method:'POST', body: fd });
+        const j = await r.json();
+        log(j.message || j.error || r.statusText);
+      }catch(e){ log('error: ' + e.message); }
+    };
+
+    // Verify  ✅
+    document.getElementById('btnVerify').onclick = async () => {
+      const f = document.getElementById('verifyFile').files[0];
+      if (!f) { log('choose a file to verify'); return; }
+      const fd = new FormData(); fd.append('file', f);
+      log(`verifying ${f.name}...`);
+      try{
+        const r = await fetch('/verify', { method:'POST', body: fd });
+        const j = await r.json();
+        log(j.message || j.error || r.statusText);
+      }catch(e){ log('error: ' + e.message); }
+    };
+
+    // Validate  ✅
+    document.getElementById('btnValidate').onclick = async () => {
+      log('validating blockchain...');
+      try{
+        const r = await fetch('/validate');
+        const j = await r.json();
+        log(j.message || j.error || r.statusText);
+      }catch(e){ log('error: ' + e.message); }
+    };
+
+    // View all history  ✅
+    document.getElementById('btnHistory').onclick = async () => {
+      log('fetching file history...');
+      try{
+        const r = await fetch('/history');
+        const j = await r.json();
+        log(JSON.stringify(j, null, 2));
+      }catch(e){ log('error: ' + e.message); }
+    };
+
+    // My upload history  ✅ uses /api/history_user
+    document.getElementById('btnMyHistory').onclick = async () => {
+      const user = localStorage.getItem("username");
+      if (!user) { log('login first to see your uploads'); return; }
+      log(`fetching upload history for ${user}...`);
+      try{
+        const r = await fetch(`/api/history_user?username=${encodeURIComponent(user)}`);
+        const j = await r.json();
+        if (!j.success) { log(j.message || j.error || 'failed'); return; }
+        log(JSON.stringify(j.blocks, null, 2));
+      }catch(e){ log('error: ' + e.message); }
+    };
+  </script>
+</body>
+</html>
