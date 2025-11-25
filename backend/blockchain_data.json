@@ -1,0 +1,355 @@
+{
+  "difficulty": 2,
+  "blocks": [
+    {
+      "index": 0,
+      "timestamp": 1762014288.8750446,
+      "data": {
+        "note": "Genesis Block - Blockchain Initialized",
+        "action": "GENESIS",
+        "timestamp": "2025-11-01T21:54:48.874995",
+        "uploader_id": "system"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 0,
+      "difficulty": 0,
+      "hash": "c8e0b037152e1a2527fa0275bc627f1a8523d3776fa90f184065e228f62ae1fd"
+    },
+    {
+      "index": 1,
+      "timestamp": 1762014357.2071228,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\test.txt",
+        "file_hash": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
+        "file_size": 5,
+        "uploader_id": "test",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-01T21:55:57.207114"
+      },
+      "previous_hash": "c8e0b037152e1a2527fa0275bc627f1a8523d3776fa90f184065e228f62ae1fd",
+      "nonce": 262,
+      "difficulty": 2,
+      "hash": "0044ba41d74597d0ea6d252732494d36b13f5e96064c2309a5e8e1182719aab1"
+    },
+    {
+      "index": 2,
+      "timestamp": 1762017690.7404277,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Syllabus_BT_CSE_III-SEM__23-27_AI_DS_FSDB_12.08.2024.pdf",
+        "file_hash": "18ab59a42e1bae460beacfb818f85f6599b2fba4d5040a337283c59fd5315c98",
+        "file_size": 310532,
+        "uploader_id": "anonymous",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-01T22:51:30.740418"
+      },
+      "previous_hash": "0044ba41d74597d0ea6d252732494d36b13f5e96064c2309a5e8e1182719aab1",
+      "nonce": 12,
+      "difficulty": 2,
+      "hash": "006fbaef54f5d7ca0ddbffd8457ef665c686e8b53b0a148e3abd208399826866"
+    },
+    {
+      "index": 3,
+      "timestamp": 1762153331.7046955,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\test.txt",
+        "file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "file_size": 0,
+        "uploader_id": "anonymous",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-03T12:32:11.704686"
+      },
+      "previous_hash": "006fbaef54f5d7ca0ddbffd8457ef665c686e8b53b0a148e3abd208399826866",
+      "nonce": 795,
+      "difficulty": 2,
+      "hash": "00338f8c33d787f563d5128c800e4e487af3aec663db0e65a1c7d6118c6cca3e"
+    },
+    {
+      "index": 4,
+      "timestamp": 1762540813.2833424,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\iv th unit mr and yarn.pdf",
+        "file_hash": "1a4bd168d27df4761220db4a3ee2837ae1bd3826185f75f8e7df9c2f242e6de7",
+        "file_size": 1613033,
+        "uploader_id": "anonymous",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T00:10:13.283330"
+      },
+      "previous_hash": "00338f8c33d787f563d5128c800e4e487af3aec663db0e65a1c7d6118c6cca3e",
+      "nonce": 118,
+      "difficulty": 2,
+      "hash": "004e6e4a1e614c2738ad2c1d8bd92ddac013d658062d5a0b41afce4bdd6594f3"
+    },
+    {
+      "index": 5,
+      "timestamp": 1762540826.1402235,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\iv th unit mr and yarn.pdf",
+        "file_hash": "1a4bd168d27df4761220db4a3ee2837ae1bd3826185f75f8e7df9c2f242e6de7",
+        "file_size": 1613033,
+        "uploader_id": "anonymous",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T00:10:26.140215"
+      },
+      "previous_hash": "004e6e4a1e614c2738ad2c1d8bd92ddac013d658062d5a0b41afce4bdd6594f3",
+      "nonce": 321,
+      "difficulty": 2,
+      "hash": "002b6d48811d453b99c9f4601093a176004da8ca4e505da7c85413fe930247aa"
+    },
+    {
+      "index": 6,
+      "timestamp": 1762541249.3533943,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\IBM IIIRD UNIT(I)HDP.pdf",
+        "file_hash": "ac716e3bd1f86f0cda1f1aae8dae0dad16b0a1de5b783c1b615e54465728a467",
+        "file_size": 1491730,
+        "uploader_id": "anonymous",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T00:17:29.353382"
+      },
+      "previous_hash": "002b6d48811d453b99c9f4601093a176004da8ca4e505da7c85413fe930247aa",
+      "nonce": 91,
+      "difficulty": 2,
+      "hash": "00e1a8b85753585e9bfbcfce74bd32050160c306327c325281ad3ee10ab0a449"
+    },
+    {
+      "index": 7,
+      "timestamp": 1762543363.5330238,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\IBM IIIRD UNIT II PART AMBARI.pdf",
+        "file_hash": "806d069221435c61a3c21fb033bfa0d8bfb520175498a05429027ea63da76f52",
+        "file_size": 1438765,
+        "uploader_id": "",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T00:52:43.533015"
+      },
+      "previous_hash": "00e1a8b85753585e9bfbcfce74bd32050160c306327c325281ad3ee10ab0a449",
+      "nonce": 410,
+      "difficulty": 2,
+      "hash": "002a146ea3c15913a366ed13272eab89ab40ec22e0f399023b0ab3aa224ffd96"
+    },
+    {
+      "index": 8,
+      "timestamp": 1762544079.5593777,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Propositional_Logic.pdf",
+        "file_hash": "bd5933fb9ab8317c32dd3da71530492975b8988edae5780ea3f32e92218e57e2",
+        "file_size": 9072340,
+        "uploader_id": "",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T01:04:39.559370"
+      },
+      "previous_hash": "002a146ea3c15913a366ed13272eab89ab40ec22e0f399023b0ab3aa224ffd96",
+      "nonce": 19,
+      "difficulty": 2,
+      "hash": "00f3a8456bb949484b2680cc27a949b68b8f0e485e644ee22f6346dd88527b40"
+    },
+    {
+      "index": 9,
+      "timestamp": 1762544113.8311641,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Propositional_Logic.pdf",
+        "file_hash": "bd5933fb9ab8317c32dd3da71530492975b8988edae5780ea3f32e92218e57e2",
+        "file_size": 9072340,
+        "uploader_id": "",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T01:05:13.831155"
+      },
+      "previous_hash": "00f3a8456bb949484b2680cc27a949b68b8f0e485e644ee22f6346dd88527b40",
+      "nonce": 793,
+      "difficulty": 2,
+      "hash": "00c4033f9e213d6f7872112556c20c8a1f2b5aaa36f1df7f2bd809bb8c685a32"
+    },
+    {
+      "index": 10,
+      "timestamp": 1762546210.9929473,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Propositional_Logic.pdf",
+        "file_hash": "bd5933fb9ab8317c32dd3da71530492975b8988edae5780ea3f32e92218e57e2",
+        "file_size": 9072340,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T01:40:10.992935"
+      },
+      "previous_hash": "00c4033f9e213d6f7872112556c20c8a1f2b5aaa36f1df7f2bd809bb8c685a32",
+      "nonce": 127,
+      "difficulty": 2,
+      "hash": "00d25168d27aeeeac14b1a0304507e036396345ddde279416669d641740e8e7a"
+    },
+    {
+      "index": 11,
+      "timestamp": 1762615098.5561223,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Propositional_Logic.pdf",
+        "file_hash": "bd5933fb9ab8317c32dd3da71530492975b8988edae5780ea3f32e92218e57e2",
+        "file_size": 9072340,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-08T20:48:18.556107"
+      },
+      "previous_hash": "00d25168d27aeeeac14b1a0304507e036396345ddde279416669d641740e8e7a",
+      "nonce": 33,
+      "difficulty": 2,
+      "hash": "0069c816b17b5b85508f621562dcdb298754ef7e083cdb651b48f16c94278094"
+    },
+    {
+      "index": 12,
+      "timestamp": 1763212545.8963537,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Propositional_Logic.pdf",
+        "file_hash": "bd5933fb9ab8317c32dd3da71530492975b8988edae5780ea3f32e92218e57e2",
+        "file_size": 9072340,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T18:45:45.896311"
+      },
+      "previous_hash": "0069c816b17b5b85508f621562dcdb298754ef7e083cdb651b48f16c94278094",
+      "nonce": 1,
+      "difficulty": 2,
+      "hash": "00e4df0383fa40b56e163792cc13d2545edcb37a3babedb36cea313f7e6aa625"
+    },
+    {
+      "index": 13,
+      "timestamp": 1763212882.6162846,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\test.txt",
+        "file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "file_size": 0,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T18:51:22.616274"
+      },
+      "previous_hash": "00e4df0383fa40b56e163792cc13d2545edcb37a3babedb36cea313f7e6aa625",
+      "nonce": 185,
+      "difficulty": 2,
+      "hash": "0089306e6df0486f11a99c63ed8a2a12df118e9e2d4b20e1144494db4172ce77"
+    },
+    {
+      "index": 14,
+      "timestamp": 1763215613.9838803,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\SVVV Fee Submission notice (Jan-June 2026) Revised Second Year Onwards_14 Nov 2025.pdf",
+        "file_hash": "3f8155c2d9b7a4e97689ec162b42d247c4cd197a86b92747e25ff60362e27ba5",
+        "file_size": 655374,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:36:53.983844"
+      },
+      "previous_hash": "0089306e6df0486f11a99c63ed8a2a12df118e9e2d4b20e1144494db4172ce77",
+      "nonce": 74,
+      "difficulty": 2,
+      "hash": "00691633cc57b477f8313851146082cfb3b297d94c4ef65f79ab3cba1530cb6b"
+    },
+    {
+      "index": 15,
+      "timestamp": 1763215736.159098,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\test.txt",
+        "file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "file_size": 0,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:38:56.159082"
+      },
+      "previous_hash": "00691633cc57b477f8313851146082cfb3b297d94c4ef65f79ab3cba1530cb6b",
+      "nonce": 53,
+      "difficulty": 2,
+      "hash": "006d0df137cf0bb863564d642cf9429f0697fc57d01bc03f9f543fcdf3966321"
+    },
+    {
+      "index": 16,
+      "timestamp": 1763215930.972614,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Test.txt",
+        "file_hash": "43ec649fee40afe890887e414cb68a62cd40cf2ccdc8427535268e0da1a8a9f3",
+        "file_size": 19,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:42:10.972595"
+      },
+      "previous_hash": "006d0df137cf0bb863564d642cf9429f0697fc57d01bc03f9f543fcdf3966321",
+      "nonce": 6,
+      "difficulty": 2,
+      "hash": "007c5ddc73df2beaf9c16475054e15b63a73075b0691154934f7c4e8a3fd3f5b"
+    },
+    {
+      "index": 17,
+      "timestamp": 1763216115.2008262,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Test.txt",
+        "file_hash": "43ec649fee40afe890887e414cb68a62cd40cf2ccdc8427535268e0da1a8a9f3",
+        "file_size": 19,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:45:15.200802"
+      },
+      "previous_hash": "007c5ddc73df2beaf9c16475054e15b63a73075b0691154934f7c4e8a3fd3f5b",
+      "nonce": 57,
+      "difficulty": 2,
+      "hash": "0063b4766251f7ac1eedeeffa075fdfe7af5f27322bbfae515298a9d3c9b86a5"
+    },
+    {
+      "index": 18,
+      "timestamp": 1763216315.2996335,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Test.txt",
+        "file_hash": "43ec649fee40afe890887e414cb68a62cd40cf2ccdc8427535268e0da1a8a9f3",
+        "file_size": 19,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:48:35.299596"
+      },
+      "previous_hash": "0063b4766251f7ac1eedeeffa075fdfe7af5f27322bbfae515298a9d3c9b86a5",
+      "nonce": 79,
+      "difficulty": 2,
+      "hash": "00a157fdf0f45cefc1dcd1d7d2be058d1310f74823e98486f4baa764586aecab"
+    },
+    {
+      "index": 19,
+      "timestamp": 1763216552.9783816,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Test.txt",
+        "file_hash": "43ec649fee40afe890887e414cb68a62cd40cf2ccdc8427535268e0da1a8a9f3",
+        "file_size": 19,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-15T19:52:32.978348"
+      },
+      "previous_hash": "00a157fdf0f45cefc1dcd1d7d2be058d1310f74823e98486f4baa764586aecab",
+      "nonce": 101,
+      "difficulty": 2,
+      "hash": "00d9b70aeac2743b9eea1301d62aef130b5abba8fc23af5168345b7e6c2bb1f0"
+    },
+    {
+      "index": 20,
+      "timestamp": 1763962444.441638,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Reactive.docx",
+        "file_hash": "04b3fa58445c297ee4f983cdddd9a941d4b3bc3b22c85cdc0d1c12096a54af7d",
+        "file_size": 2553289,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-24T11:04:04.441606"
+      },
+      "previous_hash": "00d9b70aeac2743b9eea1301d62aef130b5abba8fc23af5168345b7e6c2bb1f0",
+      "nonce": 21,
+      "difficulty": 2,
+      "hash": "000b7bc3a8925b69766c13818b2dcb0f1d59697a2c411aad4dfb3fb31512c325"
+    },
+    {
+      "index": 21,
+      "timestamp": 1764040937.2059078,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Reactive.docx",
+        "file_hash": "04b3fa58445c297ee4f983cdddd9a941d4b3bc3b22c85cdc0d1c12096a54af7d",
+        "file_size": 2553289,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-25T08:52:17.205890"
+      },
+      "previous_hash": "000b7bc3a8925b69766c13818b2dcb0f1d59697a2c411aad4dfb3fb31512c325",
+      "nonce": 80,
+      "difficulty": 2,
+      "hash": "0002f2e0cde8c20988cc060d12479c32983ec50edf1a6d77582328dbcc455dd3"
+    }
+  ]
+}
