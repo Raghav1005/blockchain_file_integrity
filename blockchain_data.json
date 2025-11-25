@@ -1,0 +1,35 @@
+{
+  "difficulty": 2,
+  "blocks": [
+    {
+      "index": 0,
+      "timestamp": 1764041258.4218285,
+      "data": {
+        "note": "Genesis Block - Blockchain Initialized",
+        "action": "GENESIS",
+        "timestamp": "2025-11-25T08:57:38.421807",
+        "uploader_id": "system"
+      },
+      "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "nonce": 0,
+      "difficulty": 0,
+      "hash": "488616dc2a87bbb1feebe2b4ce018d9d09ac87ca13b515acb308dd689aa8a3be"
+    },
+    {
+      "index": 1,
+      "timestamp": 1764041313.7933767,
+      "data": {
+        "filename": "D:\\DS project\\backend\\uploads\\Python.jpg",
+        "file_hash": "a0ca95a623390d97360216680c6e8cf247e1c1e9de79ac1c401577b536024898",
+        "file_size": 16648,
+        "uploader_id": "admin",
+        "action": "FILE_REGISTERED",
+        "timestamp": "2025-11-25T08:58:33.793351"
+      },
+      "previous_hash": "488616dc2a87bbb1feebe2b4ce018d9d09ac87ca13b515acb308dd689aa8a3be",
+      "nonce": 469,
+      "difficulty": 2,
+      "hash": "00eb1187d06a164170c81407ea3f8d5f6ad8b51d25ddf1439dd9e0d2ccddc54a"
+    }
+  ]
+}
